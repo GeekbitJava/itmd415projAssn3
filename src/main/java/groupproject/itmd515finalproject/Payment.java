@@ -11,8 +11,11 @@ package groupproject.itmd515finalproject;
 
 
 import java.sql.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-public class Payment {
+@Entity
+public class Payment implements java.io.Serializable {
 
 	/* ---------------
 	 * | Constructors  |
@@ -28,6 +31,7 @@ public class Payment {
 	 * ---------------	
 	 */
 		
+		@Id
 		private int pid;
 		private String name_on_card;
 		private long card_number;

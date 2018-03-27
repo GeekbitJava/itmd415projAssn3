@@ -10,9 +10,12 @@ Deborah Barndt
 */
 
 import java.sql.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.sql.Time;
 
-public class TaxiTransactions {
+@Entity
+public class TaxiTransactions implements java.io.Serializable {
 	
 
 	/* ---------------
@@ -29,6 +32,7 @@ public class TaxiTransactions {
 	 * ---------------	
 	 */
 		
+		@Id
 		private int tid;
 		private String userid;
 		private String driverid;

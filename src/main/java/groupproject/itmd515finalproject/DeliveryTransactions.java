@@ -13,9 +13,13 @@ Deborah Barndt
 import java.sql.Date;
 import java.sql.Time;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 
-public class DeliveryTransactions {
+
+@Entity
+public class DeliveryTransactions implements java.io.Serializable {
 
 	/* ---------------
 	 * | Constructors  |
@@ -23,14 +27,14 @@ public class DeliveryTransactions {
 	 */	
 	
 		//Default Constructor
-		public DeliveryTransactions () {
-		}
+		public DeliveryTransactions () {}
 		
 	/* ---------------
 	 * | ATTRIBUTES  |
 	 * ---------------	
 	 */
 		
+		@Id
 		private int tid;
 		private String userid;
 		private String driverid;

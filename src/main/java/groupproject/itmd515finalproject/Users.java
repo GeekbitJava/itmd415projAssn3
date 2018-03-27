@@ -9,7 +9,11 @@ Deborah Barndt
 	This is a class entity to hold Users
 */
 
-public class Users {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Users implements java.io.Serializable {
 
 
 	/* ---------------
@@ -26,6 +30,7 @@ public class Users {
 	 * ---------------	
 	 */
 
+		@Id
 		private String userid;
 		private String password;
 		private String firstName;

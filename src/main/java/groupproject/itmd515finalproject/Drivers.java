@@ -8,7 +8,12 @@ Deborah Barndt
 	This is a class entity to hold Drivers
 */
 
-public class Drivers {
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Drivers implements java.io.Serializable {
 
 	/* ---------------
 	 * | Constructors  |
@@ -24,6 +29,7 @@ public class Drivers {
 	 * ---------------	
 	 */
 		
+		@Id
 		private int vehicle_id;
 		private String driver_type;
 		private String license;
