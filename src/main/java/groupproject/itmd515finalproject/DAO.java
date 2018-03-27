@@ -7,7 +7,7 @@ package groupproject.itmd515finalproject;
  	 Project Assignment 1
 	This is a data access object that uses JDBC to create sql tables and post data to them. Later functionality to
 	pull data from the tables.
- */
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -412,3 +412,4 @@ public class DAO {
 	}	
 	
 }//end of class DAO
+ */

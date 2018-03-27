@@ -16,26 +16,26 @@ public class parseAndUpdate {
 		// TODO Auto-generated method stub
 
 		XmlParser parse = new XmlParser();
-		DAO daoO = new DAO();
+		//DAO daoO = new DAO();
 		
 		parse.parseDTXML();
-		daoO.createTables();
-		daoO.insertDtRecords(parse.getDtArray());
+		//daoO.createTables();
+		//daoO.insertDtRecords(parse.getDtArray());
 		
 		parse.parseTTXML();
-		daoO.insertTaxRecords(parse.gettTaxArray());
+		//daoO.insertTaxRecords(parse.gettTaxArray());
 		
 		parse.parseUserXML();
-		daoO.insertUsers(parse.getUsrArray());
+		//daoO.insertUsers(parse.getUsrArray());
 		
 		parse.parsePaymentXML();
-		daoO.insertPayment(parse.getPayArray());
+		//daoO.insertPayment(parse.getPayArray());
 		
 		parse.parseVehiclesXML();
-		daoO.insertVehicles(parse.getVArray());
+		//daoO.insertVehicles(parse.getVArray());
 		
 		parse.parseDriversXML();
-		daoO.insertDrivers(parse.getDriverArray());
+		//daoO.insertDrivers(parse.getDriverArray());
 		
 		
 	}

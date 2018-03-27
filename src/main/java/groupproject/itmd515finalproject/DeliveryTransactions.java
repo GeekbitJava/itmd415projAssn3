@@ -3,9 +3,9 @@ package groupproject.itmd515finalproject;
 /*
 Deborah Barndt
 	 Thomas Boller
-	 2-23-18
+	 3-27-18
 	 DeliveryTransactions.java
-	 Project Assignment 1
+	 Project Assignment 3
 	This is a class entity to hold DeliveryTransactions
 */
 
