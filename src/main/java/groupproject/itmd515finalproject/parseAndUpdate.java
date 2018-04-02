@@ -1,5 +1,14 @@
 package groupproject.itmd515finalproject;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+
 /*
 Deborah Barndt
 	 Thomas Boller
@@ -37,7 +46,24 @@ public class parseAndUpdate {
 		parse.parseDriversXML();
 		//daoO.insertDrivers(parse.getDriverArray());
 		
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("iitDB");
+		EntityManager em = emf.createEntityManager();
+
+		EntityTransaction tx = em.getTransaction();
+		Payment [] pmA = parse.getPayArray();
+		Payment pm = pmA[1];
+
+		em.find(Payment.class, pm);
+		tx.begin();
 		
+
+		em.persist(pm);
+		tx.commit();	
+		em.close();
+		emf.close();
+
 	}
+
 
 }

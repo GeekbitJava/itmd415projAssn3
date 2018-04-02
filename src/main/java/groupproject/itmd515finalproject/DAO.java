@@ -2,12 +2,12 @@ package groupproject.itmd515finalproject;
 /*
 	Deborah Barndt
  	 Thomas Boller
- 	 2-23-18
+ 	 3-29-18
  	 DAO.java
- 	 Project Assignment 1
+ 	 Project Assignment 2
 	This is a data access object that uses JDBC to create sql tables and post data to them. Later functionality to
 	pull data from the tables.
-
+*/
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -412,4 +412,4 @@ public class DAO {
 	}	
 	
 }//end of class DAO
- */
+ 
